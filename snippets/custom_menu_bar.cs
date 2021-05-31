@@ -1,6 +1,6 @@
 var bar = context.AddBar(new BarPluginConfig()
 {
-    BarTitle = "workspacer.Bar",
+    BarTitle = "ZWM.Bar",
     BarHeight = 50,
     FontSize = 16,
     DefaultWidgetForeground = Color.White,

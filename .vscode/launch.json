@@ -11,12 +11,28 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/src/workspacer/bin/Debug/net5.0-windows/win10-x64/workspacer.exe",
+            "program": "${workspaceFolder}/src/ZWM/bin/Debug/net5.0-windows/win10-x64/ZWM.exe",
             "args": [],
-            "cwd": "${workspaceFolder}/src/workspacer",
+            "cwd": "${workspaceFolder}/src/ZWM",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
-            "stopAtEntry": false
+            "stopAtEntry": false,
+            "justMyCode": false,
+        },
+        {
+            "name": ".NET Core Launch (Watcher)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/src/ZWM.Watcher/bin/Debug/net5.0-windows/win10-x64/ZWM.Watcher.exe",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/ZWM.Watcher",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            // "console": "internalConsole",
+            "console": "integratedTerminal",
+            "stopAtEntry": false,
+            "justMyCode": false,
         },
         {
             "name": ".NET Core Attach",

@@ -1,0 +1,24 @@
+﻿#r "ZWM_PATH\ZWM.Shared.dll"
+#r "ZWM_PATH\plugins\ZWM.Bar\ZWM.Bar.dll"
+#r "ZWM_PATH\plugins\ZWM.ActionMenu\ZWM.ActionMenu.dll"
+#r "ZWM_PATH\plugins\ZWM.FocusIndicator\ZWM.FocusIndicator.dll"
+
+using System;
+using workspacer;
+using workspacer.Bar;
+using workspacer.ActionMenu;
+using workspacer.FocusIndicator;
+
+Action<ConfigContext> doConfig = (context) =>
+{
+    context.DefaultConfig();
+
+    context.CanMinimizeWindows = true;
+    context.AddBar();
+    context.AddFocusIndicator();
+    var actionMenu = context.AddActionMenu();
+
+    context.WorkspaceContainer.CreateWorkspaces("1", "2", "3", "4", "5");
+    context.Keybinds.Start();
+};
+return doConfig;

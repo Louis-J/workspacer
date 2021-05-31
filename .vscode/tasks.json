@@ -7,12 +7,28 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/workspacer.sln",
-                "/t:workspacer",
+                "${workspaceFolder}/ZWM.sln",
+                "/t:ZWM",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
-            "problemMatcher": "$msCompile"
+            "problemMatcher": "$msCompile",
+            "isBuildCommand": true,
+        },
+        {
+            "label": "build release",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "-c=Release",
+                "${workspaceFolder}/ZWM.sln",
+                "/t:ZWM",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile",
+            "isBuildCommand": true,
         },
     ]
 }
